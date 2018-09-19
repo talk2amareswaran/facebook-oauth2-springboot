@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: facebookdemoapp
+security:
+  oauth2:
+    client:
+      clientId: 2172030916454185
+      clientSecret: a371f1d361e535a010dea371beacb470
+      accessTokenUri: https://graph.facebook.com/oauth/access_token
+      userAuthorizationUri: https://www.facebook.com/dialog/oauth
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: https://graph.facebook.com/me
